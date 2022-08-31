@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <div class="input-group">
-    <input type="date" id="birthdate">
-    <button class="check-btn">Check</button>
-    <div class="output"></div>
+    <header class="header">
+        <h1>Palindrome Birthday</h1>
+    </header>
+    <div class="description">
+        <h2>Check if your birthday is Palindrome or not by entering your birthday below.</h2>
     </div>
     
+    <div class="input-group">
+    <label for="birthdate">Enter your Birthdate</label>
+    <input type="date" id="birthdate">
+    <button class="check-btn">Check</button>
+    
+    </div>
+    <div class="output">output here</div>
+    <footer class="footer">
+        <ul class="ul">
+            <li class="list-item"><a href="https://twitter.com/Prateek24675372" class="list-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="list-item"><a href="#" class="list-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li class="list-item"><a href="https://github.com/Pratik-Dash" class="list-link"><ion-icon name="logo-github"></ion-icon></a></li>
 
-    <script src="./app.js"></script>
+        </ul>
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

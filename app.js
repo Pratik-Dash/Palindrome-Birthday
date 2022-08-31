@@ -26,19 +26,19 @@ checkBtn.addEventListener("click",()=>{
     }else if(previousCount<Nextcount){
         if(Nextcount == 1)
         {
-        output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} day.`
+        output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} day. 😓`
         }else{
-            output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} days.`
+            output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} days. 😓`
         }
     }
     else{
-        output.innerText = `Yaay! your birthday is Palindrome!`
+        output.innerText = `Yaay! your birthday is Palindrome! 🎈`
         output.style.color = "green"
         output.style.fontWeight = "900"
     }
 }
 else{
-    output.innerText = "Birth date field cannot be empty. Please enter your date."
+    output.innerText = "Birth date field cannot be empty. 🗅 please enter your birth date."
     output.style.color = "red"
 }
     
@@ -251,12 +251,7 @@ function getPreviousPalindromeDate(currentDate){
   return[count,date]
 }
 
-// date = {
-//     day:7,
-//     month:7,
-//     year:2020
-// }
-// console.log(getNextPalindromeDate(date))
+
 
 
 
