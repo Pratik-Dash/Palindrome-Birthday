@@ -1,6 +1,7 @@
 const checkBtn = document.querySelector(".check-btn");
 const calander  = document.querySelector("#birthdate");
 const output = document.querySelector(".output");
+const disclaimer = document.querySelector(".disclaimer")
 checkBtn.addEventListener("click",()=>{
 
     var birthday = calander.value;
@@ -20,26 +21,42 @@ checkBtn.addEventListener("click",()=>{
         if(Nextcount == 1)
         {
             output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${nextPalindromedate.day}-${nextPalindromedate.month}-${nextPalindromedate.year}, which you missed by ${Nextcount} day.`
+            disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.style.fontSize = "12px"
+            disclaimer.style.color = "lightgray"
         }else{
             output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${nextPalindromedate.day}-${nextPalindromedate.month}-${nextPalindromedate.year}, which you missed by ${Nextcount} days.`
+            disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.style.fontSize = "12px"
+            disclaimer.style.color = "gray"
         }
     }else if(previousCount<Nextcount){
         if(Nextcount == 1)
         {
         output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} day. 😓`
+        disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.style.fontSize = "12px"
+            disclaimer.style.color = "gray"
         }else{
             output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} days. 😓`
+            disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.style.fontSize = "12px"
+            disclaimer.style.color = "gray"
         }
     }
     else{
         output.innerText = `Yaay! your birthday is Palindrome! 🎈`
         output.style.color = "green"
         output.style.fontWeight = "900"
+        disclaimer.inerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.style.fontSize = "12px"
+            disclaimer.style.color = "lightgray"
     }
 }
 else{
     output.innerText = "Birth date field cannot be empty. 🗅 please enter your birth date."
     output.style.color = "red"
+
 }
     
     
