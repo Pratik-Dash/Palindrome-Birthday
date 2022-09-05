@@ -39,7 +39,7 @@ checkBtn.addEventListener("click",()=>{
             disclaimer.style.color = "gray"
         }else{
             output.innerText = `Uh oh! your birthday is not a Palindrome. The closest Palindrome date is ${previouspalindromeDate.day}-${previouspalindromeDate.month}-${previouspalindromeDate.year}, which you missed by ${Nextcount} days. 😓`
-            disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information"
+            disclaimer.innerText = "This app is just for fun. We do not collect or disclose personal information."
             disclaimer.style.fontSize = "12px"
             disclaimer.style.color = "gray"
         }

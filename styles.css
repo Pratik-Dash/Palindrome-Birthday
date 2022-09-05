@@ -45,6 +45,7 @@ input{
     margin: .6rem;
     border: 1px solid var(--accent);
     padding: .6rem;
+    background-color: var(--background-color);
 }
 input:hover{
 
